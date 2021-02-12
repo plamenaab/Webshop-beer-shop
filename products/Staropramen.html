@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+	
+		<!--<header class="main-header">
+			<nav class="main-nav nav">
+				<ul>
+					<li><a href="store.html">STORE</a></li>
+				</ul>
+			</nav>
+			
+			<nav class="main-nav nav">
+				<ul>
+					<li><a href="Heineken.html">Heineken</a></li>
+					<li><a href="Paulaner.html">Paulaner</a></li>
+					<li><a href="Staropramen.html">Staropramen</a></li>
+					<li><a href="Becks.html">Becks</a></li>
+					<li><a href="BeerGlass.html">Beer Glass</a></li>
+					<li><a href="DimpleBeerGlass.html">Dimple Beer Glass</a></li>
+				</ul>
+			</nav>
+		</header> -->
+		
+		<div style="height: 200px; margin-top: 50px; margin-left: 35%; margin-right: 35%" class="row">
+			<div class="column">
+				<img src="Images/s1.jpg" alt="Staropramen1" style="height:100%"onclick="myFunction(this);">
+			</div>
+			<div class="column">
+				<img src="Images/s2.png" alt="Staropramen2" style="height:100%"onclick="myFunction(this);">
+			</div>
+		</div>
+		
+		<div class="container">
+			<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+			<img id="expandedImg" style="width:100%">
+			<div id="imgtext"></div>
+		</div>
+		
+		<script>
+			function myFunction(imgs) {
+				var expandImg = document.getElementById("expandedImg");
+				var imgText = document.getElementById("imgtext");
+				expandImg.src = imgs.src;
+				imgText.innerHTML = imgs.alt;
+				expandImg.parentElement.style.display = "block";
+			}
+		</script>
+		
+		<h2 style="color: green; text-align: center; margin-top: 30px">STAROPRAMEN PREMIUM</h2>
+		
+		<p style="padding: 80px; color: #000000; text-indent: 25px; line-height: 1.2"><b>A slight hint of malt is followed by a pleasant hop note, the bitterness of which ensures a round slope. Staropramen Premium is perfectly balanced and a bestseller among the Staropramen beers.</b></p>
+		
+		<p style="color:#ff6600; text-align: center">ALKOCOL: 5,0 % Vol </br></br>Size: 33cl</p>
+		
+		<footer class="main-footer">
+            <div class="container main-footer-container">
+                <h3 class="band-name">THE BEER SHOP</h3>
+				<ul class="nav footer-nav">
+                    <li>
+                        <a href="https://www.instagram.com" target="_blank">
+                            <img src="Images/InstagramLogo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="Images/FacebookLogo.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+		
+	</body>
+	
+</html>

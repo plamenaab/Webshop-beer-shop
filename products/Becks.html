@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+	
+		<!--<header class="main-header">
+			<nav class="main-nav nav">
+				<ul>
+					<li><a href="store.html">STORE</a></li>
+				</ul>
+			</nav>
+			
+			<nav class="main-nav nav">
+				<ul>
+					<li><a href="Heineken.html">Heineken</a></li>
+					<li><a href="Paulaner.html">Paulaner</a></li>
+					<li><a href="Staropramen.html">Staropramen</a></li>
+					<li><a href="Becks.html">Becks</a></li>
+					<li><a href="BeerGlass.html">Beer Glass</a></li>
+					<li><a href="DimpleBeerGlass.html">Dimple Beer Glass</a></li>
+				</ul>
+			</nav>
+		</header>-->
+		
+		<div style="height: 200px; margin-top: 50px; margin-left: 20%; margin-right: 20%" class="row">
+			<div class="column">
+				<img src="Images/b1.png" alt="Becks1" style="height:100%"onclick="myFunction(this);">
+			</div>
+			<div class="column">
+				<img src="Images/b2.png" alt="Becks2" style="height:100%"onclick="myFunction(this);">
+			</div>
+		</div>
+		
+		<div class="container">
+			<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+			<img id="expandedImg" style="width:100%">
+			<div id="imgtext"></div>
+		</div>
+		
+		<script>
+			function myFunction(imgs) {
+				var expandImg = document.getElementById("expandedImg");
+				var imgText = document.getElementById("imgtext");
+				expandImg.src = imgs.src;
+				imgText.innerHTML = imgs.alt;
+				expandImg.parentElement.style.display = "block";
+			}
+		</script>
+		
+		<h2 style="color: green; text-align: center; margin-top: 30px">BECK'S PILS </h2>
+		
+		<h3 style="color: #248f24; text-align: center; margin-top: 30px"><i>"FRISCH. PUR. ECHT."</i></h3>
+		
+		<p style="padding: 80px; color: #000000; text-indent: 25px; line-height: 1.2"><b>Beer connoisseurs all over the world will immediately recognize BECK'S Pils by its pure freshness and unique taste.With BECK'S you choose a beer that suits you: confident, confident and cosmopolitan. BECK'S Pils inspires and accompanies you on your journey of discovery through the world!</b></p>
+		
+		<p style="color:#ff6600; text-align: center">ALKOCOL: 4,9 % Vol </br></br>Size: 33cl</p>
+		
+		<footer class="main-footer">
+            <div class="container main-footer-container">
+                <h3 class="band-name">THE BEER SHOP</h3>
+				<ul class="nav footer-nav">
+                    <li>
+                        <a href="https://www.instagram.com" target="_blank">
+                            <img src="Images/InstagramLogo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="Images/FacebookLogo.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+		
+	</body>
+	
+</html>
